@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* ------------------ RESET ------------------ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------ HTML, BODY ------------------ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* ------------------ HEADER ------------------ */
+
+header {
+    height: 120px;
+    width: 360px;
+    background-image: url(./images-EjercicioFinal-Portafolio/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.image--transparent {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    background-color: rgba(70, 70, 202, 0.308);
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    /* grid-column: 1/2;
+    grid-row: 1/3; */
+    list-style: none;
+    line-height: 30px;
+    margin: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nombre {
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
+    width: 10%;
+    min-width: 130px;
+    height: 32%;
+    min-height: 42px;
+    margin: auto;
+    padding: 3px 0;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    text-align: center;
+    border-radius: 8px;
+    border: solid 2px white;
+    color: white;
+    background-color: rgba(59, 59, 78, 0.774);
+}
+
+.image--photo {
+    /* grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: self-end; */
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+    height: 50px;
+    margin-bottom: -25px;
+    background-image: url(./images-EjercicioFinal-Portafolio/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #CECECE;
+}
+
+
+/* ------------------ CONTAINER__ACERCADE ------------------ */
+
+.container {
+    margin: auto;
+}
+
+.container__acercaDe {
+    text-align: center;
+    margin: auto;
+    padding: 35px 48px 0 48px;
+    width: 325px;
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+}
+
+.container__acercaDe p:nth-child(1) {
+    width: 227px;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: orange;
+}
+
+.container__acercaDe span {
+    color: blue;
+}
+
+
+/* ------------------ CONTAINER__TRABAJOS ------------------ */
+
+.container__trabajos {
+    padding: 0 5%;
+    height: 920px;
+    margin-top: 40px;
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: rgb(228, 227, 227);
+}
+
+.container__trabajos p:nth-child(1) {
+    width: 143px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.container__trabajos>div {
+    line-height: 20px;
+    text-align: center;
+}
+
+.container__trabajos>div>p {
+    font-weight: 700;
+    color: blue;
+}
+
+.container__trabajos>div>span {
+    font-size: 12px;
+    color: gray;
+}
+
+.container__image--image1 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/tudor-baciu-vc3iVL_znJ8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.container__image--image2 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.container__image--image3 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/joan-gamell-ZS67i1HLllo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.container__image--image4 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.container__image--image5 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.container__image--image6 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.container__image--image7 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.container__image--image8 {
+    height: 150px;
+    width: 150px;
+    background-image: url(./images-EjercicioFinal-Portafolio/altumcode-oZ61KFUQsus-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+
+/* ------------------ CONTAINER__CONTACTO ------------------ */
+
+.container__contacto {
+    padding: 0 5%;
+    width: 360px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    background-color: rgb(228, 227, 227);
+}
+
+.container__contacto p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+form {
+    height: 400px;
+    margin: 15px auto 0 auto;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+    padding: 6px;
+    margin: 10px 0;
+    border: solid 2px rgba(160, 159, 159, 0.747);
+    background-color: rgb(228, 227, 227);
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    border: solid 2px rgba(160, 159, 159, 0.747);
+    background-color: rgb(228, 227, 227);
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    margin: 0 87px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(119, 119, 255);
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(57, 57, 224);
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+    height: 80px;
+    margin-top: 40px;
+    background-color: rgb(24, 24, 85);
+}
+
+img {
+    width: 40px;
+    height: 20px;
+    padding: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.container__image--twitter {
+    background-color: #00acee;
+}
+
+.container__image--youtube {
+    background-color: #b2071d;
+}
+
+.container__image--facebook {
+    background-color: #39569c;
+}
+
+.container__image--instagram {
+    background-color: #3f729b;
+}
+
+.container__image--github {
+    background-color: #171515;
+}
+
+
+/* ------------------------- @MEDIA ------------------------ */
+
+@media (min-width: 1440px) {
+    /* ------------------ HEADER ------------------ */
+    header {
+        width: 1440px;
+        height: 600px;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 75%;
+        font-size: 20px;
+        width: 500px;
+    }
+    .nombre {
+        width: 350px;
+        height: 142px;
+        top: 229px;
+        font-weight: 400;
+        position: absolute;
+    }
+    .nombre p {
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    .nombre span {
+        padding-top: 88px;
+        font-size: 25px;
+    }
+    .image--photo {
+        width: 150px;
+        height: 150px;
+        top: 525px;
+        border: solid 7px white;
+        margin-bottom: -75px;
+    }
+    /* ------------------ CONTAINER__ACERCADE ------------------ */
+    .container__acercaDe {
+        width: 920px;
+        padding: 100px 48px 0 48px;
+    }
+    .container__acercaDe p:nth-child(1) {
+        width: 830px;
+        height: 40px;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .container__acercaDe p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    /* ------------------ CONTAINER__TRABAJOS ------------------ */
+    .container__trabajos {
+        width: 1440px;
+        height: 790px;
+        justify-content: center;
+        grid-template-columns: 255px 255px 255px 255px;
+        grid-template-rows: 120px 1fr 1fr;
+    }
+    .container__trabajos p:nth-child(1) {
+        width: 131px;
+        height: 46px;
+        margin-top: 35px;
+        font-size: 34px;
+        font-weight: 300;
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+    .container__image--image1 {
+        height: 235px;
+        width: 235px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        border-radius: 10px;
+    }
+    .container__image--image2 {
+        height: 235px;
+        width: 235px;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border-radius: 10px;
+    }
+    .container__image--image3 {
+        height: 235px;
+        width: 235px;
+        grid-row: 2/3;
+        grid-column: 3/4;
+        border-radius: 10px;
+    }
+    .container__image--image4 {
+        height: 235px;
+        width: 235px;
+        grid-row: 2/3;
+        grid-column: 4/5;
+        border-radius: 10px;
+    }
+    .container__image--image5 {
+        height: 235px;
+        width: 235px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        border-radius: 10px;
+    }
+    .container__image--image6 {
+        height: 235px;
+        width: 235px;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        border-radius: 10px;
+    }
+    .container__image--image7 {
+        height: 235px;
+        width: 235px;
+        grid-row: 3/4;
+        grid-column: 3/4;
+        border-radius: 10px;
+    }
+    .container__image--image8 {
+        height: 235px;
+        width: 235px;
+        grid-row: 3/4;
+        grid-column: 4/5;
+        border-radius: 10px;
+    }
+    /* ------------------ CONTAINER__CONTACTO ------------------ */
+    .container__contacto {
+        width: 830px;
+        height: 439.67px;
+        margin: 60px auto 0 auto;
+    }
+    .container__contacto p {
+        font-size: 34px;
+        padding-top: 35px;
+        color: rgb(79, 79, 151);
+    }
+    form {
+        width: 700px;
+    }
+    form input {
+        width: 332px;
+        height: 49.66px;
+        margin-top: 20px;
+    }
+    input[type=email] {
+        margin-left: 18px;
+    }
+    textarea {
+        width: 685px;
+        height: 99.33px;
+        margin-top: 40px;
+    }
+    button {
+        width: 150px;
+        height: 50.66px;
+        margin: 25px 38.5% 0 38.5%;
+    }
+    /* ------------------ FOOTER ------------------ */
+    footer {
+        width: 1440px;
+        height: 192px;
+    }
+    img {
+        width: 100px;
+        height: 60px;
+        padding: 10px;
+    }
+}
